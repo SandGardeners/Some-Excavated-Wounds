@@ -1,0 +1,419 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5895111737042944568
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3797b844bf119c94c83b110e6cf4997a, type: 3}
+  m_Name: Sketch
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  strokeTex:
+    overrideState: 1
+    value: {fileID: 2800000, guid: f24e4c3dda89e824bac5f9f19949c372, type: 3}
+    defaultState: 1
+  projectionMode:
+    overrideState: 1
+    value: 0
+  blendMode:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 0.659
+  brightness:
+    overrideState: 1
+    value: {x: 0, y: 0.8125}
+  tiling:
+    overrideState: 1
+    value: 5.5
+--- !u!114 &-3582820144254755760
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 2.01
+  threshold:
+    overrideState: 1
+    value: 0.52
+  softKnee:
+    overrideState: 1
+    value: 0.494
+  clamp:
+    overrideState: 1
+    value: 65472
+  diffusion:
+    overrideState: 1
+    value: 7
+  anamorphicRatio:
+    overrideState: 1
+    value: 0
+  color:
+    overrideState: 1
+    value: {r: 0.2783019, g: 1, b: 0.89043236, a: 1}
+  fastMode:
+    overrideState: 1
+    value: 0
+  dirtTexture:
+    overrideState: 1
+    value: {fileID: 0}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 1
+    value: 0
+--- !u!114 &-3010668528689656957
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13a732a86aa0124998c0c7aa5fee185, type: 3}
+  m_Name: Kaleidoscope
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  splits:
+    overrideState: 1
+    value: 0
+--- !u!114 &-2413711151129009657
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479a7432c78add14f87841bf50afc9e1, type: 3}
+  m_Name: HueShift3D
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 0.004
+  speed:
+    overrideState: 1
+    value: 0.589
+  size:
+    overrideState: 1
+    value: 1.19
+  geoInfluence:
+    overrideState: 1
+    value: 10
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: Post-process Volume Profile
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: 7330680149486281300}
+  - {fileID: 4380324298125509005}
+  - {fileID: -3582820144254755760}
+  - {fileID: -2413711151129009657}
+  - {fileID: 6336387532481898522}
+  - {fileID: -3010668528689656957}
+  - {fileID: 8710432863793698099}
+  - {fileID: -5895111737042944568}
+  - {fileID: 7169301223858036739}
+--- !u!114 &4380324298125509005
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1905ad603bb9a479914accad762e92, type: 3}
+  m_Name: EdgeDetect_BeforeTransparent
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 4
+  sensitivityDepth:
+    overrideState: 1
+    value: 0.21
+  sensitivityNormals:
+    overrideState: 1
+    value: 1
+  lumThreshold:
+    overrideState: 1
+    value: 0.0007
+  edgeExp:
+    overrideState: 1
+    value: 1
+  sampleDist:
+    overrideState: 1
+    value: 0.72
+  edgesOnly:
+    overrideState: 0
+    value: 0
+  edgesOnlyBgColor:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &6336387532481898522
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
+  m_Name: LensDistortion
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: -5
+  intensityX:
+    overrideState: 1
+    value: 1
+  intensityY:
+    overrideState: 1
+    value: 1
+  centerX:
+    overrideState: 1
+    value: 0
+  centerY:
+    overrideState: 1
+    value: 0
+  scale:
+    overrideState: 1
+    value: 1
+--- !u!114 &7169301223858036739
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f83681ef12547498b362aa7adec64e, type: 3}
+  m_Name: Ripples
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 0
+  strength:
+    overrideState: 1
+    value: 2
+  distance:
+    overrideState: 1
+    value: 10
+  speed:
+    overrideState: 1
+    value: 2.61
+  width:
+    overrideState: 1
+    value: 1.5
+  height:
+    overrideState: 1
+    value: 1
+--- !u!114 &7330680149486281300
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ca37f13bb89c144a71832585b7a6ac, type: 3}
+  m_Name: EdgeDetection
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  debug:
+    overrideState: 1
+    value: 0
+  mode:
+    overrideState: 1
+    value: 1
+  invertFadeDistance:
+    overrideState: 1
+    value: 1
+  fadeDistance:
+    overrideState: 1
+    value: 0
+  sensitivityDepth:
+    overrideState: 1
+    value: 0
+  sensitivityNormals:
+    overrideState: 1
+    value: 1
+  lumThreshold:
+    overrideState: 1
+    value: 0.01
+  edgeColor:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  edgeExp:
+    overrideState: 1
+    value: 1
+  edgeSize:
+    overrideState: 1
+    value: 1
+  edgeOpacity:
+    overrideState: 1
+    value: 1
+  sobelThin:
+    overrideState: 1
+    value: 0
+--- !u!114 &8710432863793698099
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74483714bbf784b45b0c9c7c76035dd8, type: 3}
+  m_Name: Fog
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  skyboxTex:
+    overrideState: 1
+    value: {fileID: 0}
+    defaultState: 1
+  useSceneSettings:
+    overrideState: 1
+    value: 0
+  fogMode:
+    overrideState: 1
+    value: 2
+  globalDensity:
+    overrideState: 1
+    value: 1
+  fogStartDistance:
+    overrideState: 1
+    value: 10
+  fogEndDistance:
+    overrideState: 1
+    value: 600
+  colorSource:
+    overrideState: 1
+    value: 0
+  skyboxMipLevel:
+    overrideState: 1
+    value: 0
+  fogColor:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  fogColorGradient:
+    overrideState: 1
+    value: {fileID: 0}
+    defaultState: 1
+  gradientDistance:
+    overrideState: 1
+    value: 1000
+  gradientUseFarClipPlane:
+    overrideState: 1
+    value: 1
+  distanceFog:
+    overrideState: 1
+    value: 1
+  distanceDensity:
+    overrideState: 1
+    value: 1
+  useRadialDistance:
+    overrideState: 1
+    value: 1
+  skyboxInfluence:
+    overrideState: 1
+    value: 1
+  heightFog:
+    overrideState: 1
+    value: 1
+  height:
+    overrideState: 1
+    value: 10
+  heightDensity:
+    overrideState: 1
+    value: 0.75
+  heightFogNoise:
+    overrideState: 1
+    value: 0
+  heightNoiseTex:
+    overrideState: 1
+    value: {fileID: 0}
+    defaultState: 1
+  heightNoiseSize:
+    overrideState: 1
+    value: 0.25
+  heightNoiseStrength:
+    overrideState: 1
+    value: 1
+  heightNoiseSpeed:
+    overrideState: 1
+    value: 2
+  lightScattering:
+    overrideState: 1
+    value: 0
+  scatterIntensity:
+    overrideState: 1
+    value: 10
+  scatterThreshold:
+    overrideState: 1
+    value: 1
+  scatterDiffusion:
+    overrideState: 1
+    value: 10
+  scatterSoftKnee:
+    overrideState: 1
+    value: 0.5
